@@ -1,0 +1,835 @@
+/* Estilos generales */
+
+body {
+	 font-family: Arial, sans-serif;
+   	 margin: 0;
+   	 padding: 0;
+   	 background-color: #fffffffa;
+}
+
+     /*Estilos de enlaces*/ 
+
+ a {
+	color: #DCEDF4;
+   	 text-decoration: none;
+}
+
+a:hover {
+   	 text-decoration:none;
+    
+}
+
+  
+/*estilos cabecera*/
+
+header {
+
+   	 display:flex ;
+   	 flex-wrap: wrap;
+
+   	 background-color: #ffffffff;
+   	 font-size: 36px;
+   	 /*text-align: center;*/
+   	 padding-bottom: 0.5%;
+   	 /*padding-top: 5%;*/
+
+}
+
+header h1 {
+
+   	 color: red;
+   	 padding: 10px; /* Espacio alrededor del texto */
+   	 width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+   	 background-color: rgb(255, 255, 255);
+   	 box-shadow:0px 7px 5px 5px gray;
+}
+    
+header h2 {
+
+	color: #000000f5;
+    	/* border: 1px solid black; /* Ancho, tipo y color del borde */
+   	padding: 10px; /* Espacio alrededor del texto */
+  	width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+}
+
+    /* Estilos para el logotipo */
+
+/*#logo{
+
+    /*border-radius: 50%;*/
+   /* border: 1px solid black; /* Ancho, tipo y color del borde 
+
+}*/
+
+#head1{
+    
+   	 flex:content;
+   	 padding-top:7%;/*5px*/
+   	 padding-left: 8%;
+   	 width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+}
+
+#head2{
+	flex:content;
+	margin-top: 54px;  
+    	display:block;  /*añadi*/
+}
+
+#head1 h1{ /*cambie head2 a 1*/
+
+	font-size:large;/*xx-large*/
+	background-color: black;
+	display: inline;/*añadi*/
+
+}
+
+#head2 h1{
+
+    	font-size:large;/*xx-large*/
+    	background-color: black;
+    	display: inline;/*añadi*/
+    }
+
+#head2 h2{
+
+	/*texto en degradado*/
+
+	font-size: 32px ; /*60px*/
+	background: linear-gradient(to right, #1E6BA2, #68757B, #1E6BA2);
+	/*background-size: cover;*/
+	/*border: 1px solid black;*/
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-right: 182px;
+}
+
+#head1 > img {
+    
+    	display: inline;/*block*/
+    	max-width: 200px; /* Ajusta el ancho máximo */
+    	height: auto; /* Mantiene la proporción de aspecto */
+    	border: 2px solid black; /* Ancho, tipo y color del borde */
+    	padding: 10px; /* Espacio alrededor */
+    	width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+  
+}
+/*estilos cabecera*/
+
+img {
+    	max-width: 200px; /* Ajusta el ancho máximo */
+    	/*height: auto; /* Mantiene la proporción de aspecto */
+}
+
+/* Estilos para la barra de navegacion */
+
+nav{
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+    /*	background-color: #FFFFFF;
+    	padding-left: 5%;*/
+    	z-index: 1000; /* Asegura que la barra de navegación esté sobre otros elementos*/
+    /*	padding: 20%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;*/
+    
+}
+nav ul {
+    	list-style: none;
+    	display: grid;
+    	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    	grid-gap: 10px;
+    	justify-content: center;
+    	padding-bottom: 10%;
+    	padding-top: 1%;
+	margin: 0; /* Elimina el margen predeterminado de la lista */
+}
+
+nav ul li {
+
+   	padding-left: 10%;
+}
+
+nav a {
+    	color: white;
+    	text-decoration: none;
+    	font-size: 16px;
+}
+nav a:hover {
+    	text-decoration:none;
+    	background-color:#D7EAF2;
+    	margin: 1%;
+    	padding: 3%;
+    	opacity: 80%;
+}
+
+    /* Estilos para el logotipo en la barra de navegación */
+#logo-navbar{
+   
+    	display: none; /* Oculta el logotipo en la barra de navegación por defecto */
+    	margin-right: 50px; /* Ajusta el margen derecho para separar el logo del borde */
+}
+
+#navbar {
+    	background-color: #FFFFFF;
+    	padding: 10px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	max-width: 100%; /* Ancho máximo del contenedor */
+    	margin: 0 auto; /* Centrar la barra de navegación horizontalmente */
+
+}
+#menu-items {
+    	list-style-type: none;
+    	margin-left: 10%;
+    	margin-right: 20%;
+    	padding: 0;
+    	display:flex;
+   
+   
+}
+  
+#menu-items ul {
+    
+    	margin: 0;
+    	padding: 0;
+    	display:flex;
+   
+}
+#menu-items li {
+    	margin-right: 10px;
+}
+#menu-items li a {
+    	color: #68757B;
+    	text-decoration: none;
+    	font-size: 16px;
+}
+
+
+#logo-navbar-image{
+    /*border-radius: 50%;*/
+    	width: 30%;
+    	margin:0%;
+    	margin-right: 10px;
+    	margin-left: 10%;
+    	/*border-color:rgb(107, 110, 100) ;*/
+    	/*border-style:solid;*/
+}
+#logo-navbar ul{
+	display: row;
+	float: left;
+	position:absolute;
+	align-items: center;
+
+}
+
+    /* Estilos para la barra de navegación fija */
+.sticky {
+
+    	position:fixed;
+    	top: 0;
+    	width: 100%;
+    	z-index: 1000;
+}
+
+    /* Estilos para el menú de hamburguesa */
+#menu-toggle {
+    	display: none; /* Ocultar el menú de hamburguesa por defecto */
+    	cursor: pointer;
+}
+
+.bar {
+    	width: 25px;
+    	height: 3px;
+    	background-color: #68757B;
+    	margin: 5px 0;
+}
+
+.disabled-link {
+    	color: black;
+    	pointer-events: none; /* Evita que el enlace sea clickeable */
+    	cursor: default; /* Cambia el cursor a predeterminado */
+}
+
+/* fin de los estilos barra de navegaciopn*/
+    
+  /* Estilos */
+
+#principal{
+    	display: flex;
+    	flex-wrap: wrap;
+    	
+  
+}
+.container {
+	background-color:#FFFFFF;
+    	display: flex;
+    	flex-direction: column;
+    	padding: 5%;
+	padding-top: 1px;
+    
+}
+.column1 {
+    	flex:content;
+    	flex-wrap: wrap;
+
+}
+.column2 {
+    	flex:content;
+   
+}
+
+#blog{
+    	background-color:white;
+    
+}
+
+#contenido{
+    	flex:content;
+    	min-height: 80%;
+    	text-align: justify;
+	margin-bottom: 40px;
+	padding-top: 5px;
+}
+#contenido h2{
+        font-size:44px;
+        color:#F4AF00;
+	margin-top:80px;	        
+	border-color: #1E6BA2;
+	border-style: double;
+	text-align: center;
+
+}
+
+#contenido1{
+
+	display: flex;
+        justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
+        align-items: center; /* Alinea el texto y la imagen verticalmente */   
+	min-height: 100%;
+	background:linear-gradient(to right, #1E6BA2,#68757B,#68757B);
+	padding:3%;
+	gap: 1%;
+
+}
+
+#contenido1 h2{
+	font-size:60px;
+	color:white;		
+}
+ 
+
+
+#contenido1 p{
+	font-size:large;
+	color:white; 
+}
+
+.btn-contact{
+
+background-color: #4CAF58;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 10px;
+cursor: pointer;
+border-radius: 5px;
+border: none;
+transition: background-color 0.3s ease;
+}
+.btn-contact:hover{
+background-color:#45a049;
+}
+
+
+#texto{
+	flex: 1; /* El texto ocupa el 50% del espacio */
+        padding-right: 20px; /* Espacio entre el texto y la imagen */
+
+
+}
+#imagen{
+        flex: 1; /* La imagen ocupa el otro 50% */
+	 box-shadow: 2px 2px 3px 1px #1E6BA2;
+}
+
+#imagen > img{
+	max-width: 100%; /* Ajusta el ancho máximo */
+	height: auto; /* Mantiene la proporción de aspecto */
+  	filter: grayscale(75%);
+}
+
+#contenido2{
+
+        display: flex;
+        justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
+        align-items: center; /* Alinea el texto y la imagen verticalmente */   
+        min-height: 100%;
+        background:linear-gradient(to right, #1E6BA2,#68757B,#68757B);
+        box-shadow: 2px 2px 3px 1px #1E6BA2;
+
+        padding: 1px 0px 0px 40px;
+	margin-top: 5%;
+	/*margin-bottom: 4%;*/
+        gap: 1%;
+
+}
+#contenido2 h2{
+        font-size:35px;
+        color:white;
+}
+#contenido2 p{
+        font-size:large;
+        color:white; 
+}
+
+#contenido3 {
+
+  	flex: content;
+  	min-height: 80%;
+  	text-align: center;
+  	/*padding-left:50px;
+	padding-top:10px;
+	padding-right:50px;
+	padding-bottom:10px;*/
+	font-size:xx-large;
+ 	background-color:#1E6BA2;
+	padding: 13px;
+	color: antiquewhite;
+}
+
+#contenido4{
+
+        display: flex;
+        justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
+        align-items: center; /* Alinea el texto y la imagen verticalmente */   
+        min-height: 100%;
+        background:linear-gradient(to right, #1E6BA2,#68757B,#68757B);
+        box-shadow: 0px 0px 20px 0px #1E6BA2;
+
+        padding: 10px 40px 0px 40px;
+        margin-top: 5%;
+	margin-bottom:5%;
+
+        /*margin-bottom: 4%;*/
+        gap: 1%;
+
+}
+#contenido4 h2{
+        font-size:35px;
+        color:white;
+}
+#contenido4 p{
+        font-size:large;
+        color:white; 
+}
+#contenido4 h3{
+     	font-size:large;
+        background-color:#FFC42E;
+	text-align: -moz-center;
+	border-radius: 50px;
+	padding: 2%;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+#contacto{
+        flex:content;
+        font-size:medium;
+        background-color:white;
+        text-align: center;
+        margin-bottom:5%; 
+}
+
+
+#formulariocontacto{
+        background-color:#EAF0F2;
+        padding: 10%;
+        gap: 10%;
+        transition: opacity 0.3s ease; /* Agrega una transición suave para la propiedad de opacidad */
+        box-shadow: 0px 5px 10px 1px #68757B; 
+        margin: 5%;
+}
+#contactform button{
+        background-color:#45a049;
+	
+}
+/*FORMULARIO DE CONTACTO*/
+
+
+
+#servicios {
+    	flex:content;
+    	/*display: none;*/
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+    	background-color: rgb(207, 205, 205);
+    	transition: opacity 0.3s ease; /* Agrega una transición suave para la propiedad de opacidad */
+    	box-shadow: 5px 5px 10px 1px  darkolivegreen;
+    
+}
+#servicios ul li{
+    	text-align: center;
+    	display:block;
+    	font-size: x-large;
+}
+#servicios a{
+    	color: azure;
+    	padding-bottom: 3%;
+
+}
+#servicios a:hover{
+    	color:white;
+    	text-decoration:none;
+    	opacity: 80%;
+
+}
+#servicios h2{
+    	display:block;
+    	font-size:xx-large;
+    	text-align: center;
+   
+    }
+#servicios article{
+    	border-style: none;
+}
+
+#servicios.visible {
+    	display: block;
+    	opacity: 1; /* Muestra el elemento con una opacidad completa */
+}
+
+section {
+    	padding:0%;
+    	display: grid;
+    	grid-gap: 10px;
+}
+
+
+
+
+/*estilos*/
+
+/*estilos tarjetas*/
+
+.grid-container {
+    
+    	display:flex;/*grid*/
+    	grid-template-columns:auto;
+    	gap: 1%;
+    	background-color:transparent;
+    	column-count:1;
+    	justify-content: center; /* Centra horizontalmente */
+    	padding: 5px;
+	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+	padding-bottom: 31px;
+	padding-top: 64px;
+	padding-right: 30px;
+	padding-left: 30px;
+  }
+  
+  
+  .tarjeta {
+    	background-color:white;
+    	border: none;
+    	font-size: medium;
+    	display: block;
+    	/*width: 100%;*/
+    	margin: 1%;
+ 	box-shadow: 2px 2px 3px 0px  gray;
+    	border-top-left-radius: 10%;
+    	border-top-right-radius: 10%;
+   	/* padding:5%;*/
+
+  }
+  
+.tarjeta2 {
+        background-color:white;
+        border: none;
+        font-size: medium;
+        display: block;
+        /*width: 100%;*/
+        margin: 1%;
+        box-shadow: 2px 2px 3px 1px gray;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+         /*padding:2%;*/
+}
+
+
+  .col-img {
+    	background-color: white;
+    	width: 100%;
+    	padding-top: 5%;
+    	/*padding-bottom: 3%;*/
+    	display: flex;
+    	justify-content: center; /* Centra horizontalmente */
+    	/*align-items: center; /* Centra verticalmente */
+    	border-top-left-radius: 10%;
+    	border-top-right-radius: 10%;
+  }
+.col-img2 {
+        /*width: 100%;*/    
+        padding-top: 5%;   
+        padding-bottom: 3%;
+        display: flex;
+        /*justify-content: center; /* Centra horizontalmente */
+        /*align-items: center; /* Centra verticalmente */
+        /*border-top-left-radius: 10%;*/ 
+        /*border-top-right-radius: 10%;*/
+	filter: grayscale(80%);
+  }
+
+.col-img img {
+ 
+    	width: 214px;
+	height: 214px;
+  	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  	max-height: 100%; /* La imagen ocupará todo el alto de su contenedor */
+  	border-top-left-radius: 10%; 
+        border-top-right-radius: 10%;
+}
+.col-img2 img {
+        /*width: 200px;*/ 
+        /*height: 200px;*/
+        /*max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+        /*max-height: 100%; /* La imagen ocupará todo el alto de su contenedor */
+        border-radius: 10%;
+}
+
+  
+  .col-tex {
+    	background-color:white;
+    	width: 20em;
+       	max-height: 100%;
+   	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+   	justify-content: left; /* Centra horizontalmente */
+	padding:1px 20px 20px 20px
+  }
+  
+ .col-tex2 {
+        
+        width: 15em;	        
+        padding:1px 20px 0px 20px;   /*Añade un relleno para separar el texto del borde */
+        max-height: 100%;
+        /*max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+        justify-content: left; /* Centra horizontalmente */
+
+  }
+
+  .col-tex > p > h2 {
+    	text-align:center; /* Alinea el texto justificado */
+   	margin:10%;
+    	padding: 5%;
+    	font-size: medium;
+
+
+  }
+
+ 
+
+
+
+/*footer*/
+footer {
+    	display:flex ;
+    	flex-wrap: wrap;
+    	flex-direction:row;
+    	background-color:#1E6BA2;
+    	color:white;
+    	text-align: center;
+    	padding-top: 2%;
+	padding-bottom: 5%;
+}	
+#logo-footer{
+	padding:auto;
+        flex:content;
+}
+#footer1{
+    	padding:auto;
+    	flex:content;
+}
+#footer1 img {
+        width: 30px;
+        height:30px;
+}
+#footer2{
+    	padding:auto;
+    	flex:content;
+
+}
+#footer3{
+    	padding:auto;
+    	flex:content;
+
+}
+footer img{
+    	width: auto;
+      
+}
+footer ul {
+    	list-style: none;
+    	padding: 0%;
+    	margin: 0%;
+}
+
+footer ul li {
+   
+    	margin-right: 1px;
+}
+/*footer*/
+
+
+
+
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 510px) {
+   
+    /* Estilos para nav */
+    	#navbar {
+        padding-left: 5%; /* Reduce el padding en pantallas pequeñas */
+        flex-direction: row; /* Cambia la dirección del flexbox a columna */
+        flex: 100%;        
+
+    }
+
+    #navbar ul {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Ajusta el tamaño de los elementos de la lista */
+        grid-gap:30%; /* Reduce el espacio entre elementos de la lista */
+        flex: 100%;        
+
+    }
+
+    #navbar a {
+        padding: 1%; /* Aumenta el espacio alrededor de los enlaces */
+        margin-top: 5%;
+        font-size: x-large;
+    }
+
+
+    
+        /* Añade estilos para el botón de hamburguesa */
+        #menu-toggle {
+        display: block; /* Mostrar el botón de hamburguesa */
+           
+        }
+    
+        /* Oculta los elementos de la barra de navegación en pantalla pequeña */
+        #menu-items {
+        display: none;
+        }
+    }
+    
+ 
+    /*tarjetas*/
+
+@media only screen and (max-width: 510px) {
+   	#hide{
+      	display: none; /* Oculta el contenedor en pantallas pequeñas */
+    }
+
+.grid-container {
+    
+        display:grid;
+        grid-template-columns:auto;
+        gap: 1%;
+}
+
+#contenido h2 {
+	font-size: x-large;
+}
+#contenido1 h3{
+padding: 0.5%;
+border-radius: 21%;
+text-align: center;
+margin-left: 55%;
+box-shadow: 2px 0px 0px 2px #D29E19;
+margin-right: 10%;
+}
+
+#contenido3 {
+ ;
+  font-size: larger;
+ 
+}
+
+#contenido4 h2 {
+ 	font-size: large;
+  	color: white;
+}
+
+ #contenido4 h3 {
+  	font-size: small;
+  	background-color: #FFC42E;
+	border-radius: 20px;
+	padding: 2%;
+
+}
+
+.tarjeta2 {
+	font-size: medium;
+}    
+.col-img img{
+width: 100px;
+height: 100px;
+}
+
+#contenido {
+  	text-align: center; 
+   }
+
+.col-img2 {
+  	/*justify-content: center;*/
+ 	float: left;
+ 	 padding-left: 2%
+ 	 padding-top: 0%;
+}
+footer {
+
+        display:grid;
+	grid-template-columns:auto;
+}
+#footer1 img {
+	width: 50px;
+	height: 50px;
+}
+}  
+  /* pantallas medianas (tablets) y superiores */
+
+  @media only screen and (min-width: 601px) {
+
+    	#hide{
+      	display: block; /* muestra el contenedor en pantallas de tamaño tablet en adelante */
+    }
+/*navbar*/
+   #menu-items {
+        display: flex;
+        }
+
+            
+
+    }
+
+    /*vista de desarrollocseg*/
+     
+  /* Estilos para pantallas móviles */
+@media only screen and (max-width: 510px) {
+    	#hide1 {
+        display: block; /* Muestra el contenedor en pantallas pequeñas */
+    }
+
+}
+
+/* Estilos para pantallas medianas (tablets) y grandes (escritorios) */
+@media only screen and (min-width: 511px) {
+    	#hide1 {
+        display: none; /* Oculta el contenedor en pantallas medianas y grandes */
+    }
+}
