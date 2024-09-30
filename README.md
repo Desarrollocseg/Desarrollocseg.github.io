@@ -24,7 +24,7 @@ Es una página web dedicada al desarrollo web y la ciberseguridad.
 ### Enlaces externos
 
 - **GitHub**: [github.com/Desarrollocseg](https://github.com/Desarrollocseg)
-- **YouTube**:  [youtube.com/@Desarrollocsec](https://www.youtube.com/@Desarrollocsec)
+- **YouTube**:  [youtube.com/@Desarrollocseg](https://www.youtube.com/@Desarrollocseg)
 - **Instagram**: Contenido restringido para mayores de 16 años [instagram.com/desarrollocseg](https://www.instagram.com/desarrollocseg/)
 
 Si deseas contactar al desarrollador, puedes hacerlo a través de: [Contacto](https://desarrollocseg.github.io/contactenos.html).
