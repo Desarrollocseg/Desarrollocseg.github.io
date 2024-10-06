@@ -307,6 +307,7 @@ nav a:hover {
 
 	display: flex;
         justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
+
         align-items: center; /* Alinea el texto y la imagen verticalmente */   
 	min-height: 100%;
 	background:linear-gradient(to right, #1E6BA2,#68757B,#68757B);
@@ -800,7 +801,8 @@ footer {
 	width: 50px;
 	height: 50px;
 }
-}  
+} 
+ 
   /* pantallas medianas (tablets) y superiores */
 
   @media only screen and (min-width: 601px) {
@@ -833,3 +835,4 @@ footer {
         display: none; /* Oculta el contenedor en pantallas medianas y grandes */
     }
 }
+
