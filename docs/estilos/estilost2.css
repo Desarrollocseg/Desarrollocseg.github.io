@@ -283,20 +283,29 @@ nav a:hover {
 
 #blog{
     	background-color:white;
-    
+  	padding:1%;
+        display: grid;
+        grid-gap: 10px;
+	width: 80%; 
+        border-color: #1E6BA2;
+        border-style: double;
+}
+#info{
+background-color:white;
 }
 
 #contenido{
+
     	flex:content;
     	min-height: 80%;
     	text-align: justify;
-	margin-bottom: 40px;
-	padding-top: 5px;
+	margin-bottom: 16px;
+	padding-top: 0px;
 }
 #contenido h2{
-        font-size:44px;
+        font-size:xx-large;
         color:#F4AF00;
-	margin-top:80px;	        
+	margin:1.2em 0;	        
 	border-color: #1E6BA2;
 	border-style: double;
 	text-align: center;
@@ -375,7 +384,7 @@ background-color:#45a049;
         box-shadow: 2px 2px 3px 1px #1E6BA2;
 
         padding: 1px 0px 0px 40px;
-	margin-top: 5%;
+	margin-top: -5%;
 	/*margin-bottom: 4%;*/
         gap: 1%;
 
@@ -396,11 +405,12 @@ background-color:#45a049;
   	text-align: center;
   	/*padding-left:50px;
 	padding-top:10px;
-	padding-right:50px;
-	padding-bottom:10px;*/
+	padding-right:50px;*/
+	padding-bottom:10px;
 	font-size:xx-large;
  	background-color:#1E6BA2;
 	padding: 13px;
+	margin-bottom: 2%;
 	color: antiquewhite;
 }
 
@@ -414,7 +424,7 @@ background-color:#45a049;
         box-shadow: 0px 0px 20px 0px #1E6BA2;
 
         padding: 10px 40px 0px 40px;
-        margin-top: 5%;
+        margin-top: -7%;
 	margin-bottom:5%;
 
         /*margin-bottom: 4%;*/
@@ -529,7 +539,7 @@ section {
     	justify-content: center; /* Centra horizontalmente */
     	padding: 5px;
 	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
-	padding-bottom: 31px;
+	padding-bottom:185px;
 	padding-top: 64px;
 	padding-right: 30px;
 	padding-left: 30px;
@@ -634,9 +644,38 @@ section {
   }
 
  
+aside{
 
-
-
+  flex: 1;
+ /* box-shadow: 0 0 10px #1E6BA2;*/
+  padding: 20px;
+  border-color: #1E6BA2;
+  border-style: double;
+  margin-left: 1%;
+  margin-top: 1.3%;
+  background-color: white;
+  height: fit-content;
+  font-size:small;
+}
+aside img{
+width: 100%;
+}
+aside h3{
+font-size:20px;
+margin-bottom:10px;
+}
+aside ul{
+list-style-type:none;
+padding:0;
+}
+aside ul li a{
+text-decoration:none;
+color:#F4AF00;
+font-weight:bold;
+}
+aside ul li a{
+color:#F4AF00;
+}
 /*footer*/
 footer {
     	display:flex ;
@@ -726,9 +765,15 @@ footer ul li {
         #menu-items {
         display: none;
         }
-    }
     
- 
+    
+#blog{
+width: 100%;
+}
+  
+
+}
+
     /*tarjetas*/
 
 @media only screen and (max-width: 510px) {
@@ -783,7 +828,8 @@ height: 100px;
 }
 
 #contenido {
-  	text-align: center; 
+  	text-align: center;
+	 
    }
 
 .col-img2 {
