@@ -644,7 +644,7 @@ section {
   }
 
  
-#aside{
+#entradas{
 
   flex: 1;
  /* box-shadow: 0 0 10px #1E6BA2;*/
@@ -657,23 +657,23 @@ section {
   height: fit-content;
   font-size:small;
 }
-#aside img{
+#entradas img{
 width: 100%;
 }
-#aside h3{
+#entradas h3{
 font-size:20px;
 margin-bottom:10px;
 }
-#aside ul{
+#entradas ul{
 list-style-type:none;
 padding:0;
 }
-#aside ul li a{
+#entradas ul li a{
 text-decoration:none;
 color:#F4AF00;
 font-weight:bold;
 }
-#aside ul li a{
+#entradas ul li a{
 color:#F4AF00;
 }
 /*footer*/
