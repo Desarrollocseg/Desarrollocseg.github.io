@@ -290,6 +290,35 @@ nav a:hover {
         border-color: #1E6BA2;
         border-style: double;
 }
+
+.img-blog{
+ 	 background-color: #1E6BA2;
+ 	 width: 100%;
+	 padding-top: 4%;
+	 display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+ 	 padding-bottom: 2%;
+	 margin: 5% 0% 5% 0%;
+}
+.img-blog img {
+	max-width: 400px;
+  	filter: grayscale(85%);
+}
+.btn-leer-mas{
+	background-color: #4CAF50;
+	color:white;
+	padding:10px 20px;
+	border:none;
+	border_radius:5px;
+	cursor:pointer;
+	font-size:16px;
+
+} 
+.btn-leer-mas:hover{
+background-color:#45a049
+}
+
 #info{
 background-color:white;
 }
@@ -301,6 +330,10 @@ background-color:white;
     	text-align: justify;
 	margin-bottom: 16px;
 	padding-top: 0px;
+  	list-style-type: none;
+}
+#contenido li {
+text-decoration: none;
 }
 #contenido h2{
         font-size:xx-large;
@@ -771,6 +804,9 @@ footer ul li {
 width: 100%;
 }
   
+.img-blog img {
+        max-width: 200px;
+}
 
 }
 
