@@ -676,6 +676,38 @@ section {
 
   }
 
+#anuncios{
+
+  flex: 1;
+ /* box-shadow: 0 0 10px #1E6BA2;*/
+  padding: 20px;
+  border-color: #1E6BA2;
+  border-style: double;
+  margin-left: 1%;
+  margin-top: 1.3%;
+  background-color: white;
+  height: fit-content;
+  font-size:small;
+}
+#anuncios img{
+width: 100%;
+}
+#anuncios h3{
+font-size:20px;
+margin-bottom:10px;
+}
+#anuncios ul{
+list-style-type:none;
+padding:0;
+}
+#anuncios ul li a{
+text-decoration:none;
+color:#F4AF00;
+font-weight:bold;
+}
+#anuncios ul li a{
+color:#F4AF00;
+}
  
 #entradas{
 
