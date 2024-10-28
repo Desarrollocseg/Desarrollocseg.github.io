@@ -131,8 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	contraseñas seguros para almacenar y gestionar contraseñas de manera centralizada.</p>
         <p>Capacitar a los usuarios para que comprendan la importancia de contraseñas seguras y las prácticas recomendadas para crearlas 
 	y gestionarlas. Realizar auditorías periódicas para identificar contraseñas débiles o comprometidas y tomar medidas correctivas.
-        Implementar medidas de seguridad, como el bloqueo de cuentas después de un número determinado de intentos fallidos, para proteger contra
-	ataques de fuerza bruta.La gestión de contraseñas efectiva es esencial para fortalecer la seguridad de cualquier sistema o red, y 
+        Implementar medidas de seguridad, como el bloqueo de cuentas después de un número determinado de intentos fallidos, para proteger contra	ataques de fuerza bruta.La gestión de contraseñas efectiva es esencial para fortalecer la seguridad de cualquier sistema o red, y 
 	la concienciación y educación continua son clave para su éxito.</p>
    
 	<h4> 2. Actualizaciones y parches:</h4>
@@ -167,16 +166,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--articulo DDoS-->
 	<article id="contenido">
            
-                <div class="img-blog"><img src="docs/img/ddos.png"alt="imagen-ddos"></div>
+                <div class="img-blog"><img src="docs/img/ddos.png"alt="imagen-ddos"id="octubre-2024ciber"></div>
         <h3> ¿Que es un Ataque DDoS denegación de servicio distribuido?</h3>
         <p>Los ataques DDoS son parte del grupo de los ataques de denegación de servicio (ataques DoS),Los ataques DDoS envían tráfico atacante
-	distribuido desde múltiples fuentes a la vez. utilizan protocolos de conexión de red estándar como el Protocolo de Transferencia 
+	distribuido desde múltiples fuentes a la vez. </p>
+	        <div id="desplegar" style="display:none;">
+
+	<p>Utilizan protocolos de conexión de red estándar como el Protocolo de Transferencia 
 	de Hipertexto (HTTP) y el Protocolo de Control de Transmisión (TCP) este tráfico busca sobre cargar el ancho de banda de los endpoint,
 	aplicaciones y otros activos con más tráfico del que pueden procesar, siendo su  único objetivo desactivar o derribar recurso en línea 
 	disponibles,  como lo son sitios web o servicios en la nube y aplicaciones, sobrecargando estos con solicitudes de conexión consecutiva, 
 	paquetes falsos u otro tráfico malicioso. </p>
-        <div id="desplegar" style="display:none;">
-	
+        
 	<h3>Ataques DDos y sus tipos</h3>
 	<p>Para entender los tipos de ataque tenemos que echar un vistazo al  modelo de referencia OSI  que nos da  un marco de  siete capas 
 	de red que definen la transformación de la información cuando viaja entre un dispositivo a otro conectados a la internet, asigna a 
@@ -227,8 +228,102 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<p>Este tipo de ataques consumen todo el ancho de banda disponible dentro de una red impidiendo  que los usuarios legítimos se conecten 
 	a los recursos de la red o servidor de destino, inundando las redes con cantidades muy altas de tráfico en este grupo 
 	tenemos los ataques de  Inundaciones UDP, Inundaciones ICMP y Ataques de amplificación de DNS.</p>
-	<h3>continuara..</h3>
+	
+	<h3>1 inundación UDP(UDP Flood):</h3>
+	<p>Se envían paquetes falsos del Protocolo de datagrama de usuarios (UDP) a los puertos de un host de destino en busca de una aplicación 
+	para recibir estos paquetes.sabiendo que los paquetes UDP son falsos,el host envía un  mensaje ICMP «Destino inaccesible» al remitente ya 
+	que no existe ninguna aplicación real que los reciba. Con este ataque se logra  sobrecargar la capacidad de ese dispositivo para procesar
+	 y responder. al flujo de paquetes UDP falsos, denegando la disponibilidad del host para responder a los paquetes legítimos.</p>
+	<p>Lo normal sería que cuando un servidor recibe un paquete UDP en un puerto determinado, realiza dos pasos como respuesta: 
+	<br/>
+	-El servidor comprueba si se está ejecutando algún programa que esté escuchando en el puerto especificado. 
+	<br/>
+	-Si ningún programa recibe paquetes en ese puerto, el servidor responde con un paquete ICMP (ping )informando que el Destino es 
+	 inaccesible.</p>
+	
+	<h4>¿Por qué es peligroso?</h4>
+	<p>Con una herramienta simple, el atacante puede generar grandes volúmenes de tráfico UDP hacia una víctima, causando una 
+	denegación de servicio. Esto puede interrumpir servicios en servidores, aplicaciones o redes completas.</p>
+	
+	<h4>¿Cómo prevenir las inundaciones UDP?</h4>
 
+	<p>-Filtrar el tráfico UDP no necesario: Configurar firewalls o sistemas de prevención de intrusiones (IPS) para bloquear o 
+	filtrar tráfico UDP no solicitado o sospechoso.
+	<br/>
+	-Limitar la velocidad de tráfico UDP: Implementar mecanismos de limitación de velocidad (rate limiting) para el tráfico UDP 
+	puede mitigar el impacto de este tipo de ataque.
+	<br/>
+	-Monitorear la red: Utilizar herramientas de monitoreo que detecten patrones anormales en el tráfico UDP y alerten a los administradores
+	 antes de que el ataque cause daños graves.</p>
+	
+	<h3>2 Inundaciones ICMP (ICMP Flood):</h3>
+	<p>Estos ataques de inundación de protocolo de control de mensajes de Internet (ICMP)  bombardean objetivos con solicitudes de eco ICMP 
+	desde múltiples direcciones IP falsificadas o botnets causando que el servidor o dispositivo de destino se sobrecargue y no pueda 	
+	procesar las solicitudes de eco ICMP válidas.A medida que el dispositivo intenta responder, todos sus recursos (memoria, procesamiento e interfaz ) 
+	se quedan sin capacidad  y ya no puede atender solicitudes o usuarios legítimos.</p>
+
+	<p>Con el protocolo ICMP se prueba la existencia de conectividad entre dispositivos, un dispositivos envía una solicitud 
+	de paquetes (ping) a otro y según el tiempo de respuesta se establece activo o inactivo este, en el ataque se elaboran cantidades
+	 altas de este recurso causando que el dispositivo receptor no responda satisfactoriamente despues de un número determinado de 
+	peticiones denegando así el servicio.</p>
+
+	<h4>¿Por qué es peligroso?</h4>
+	<p>Es peligroso porque se realiza  con muy pocos recursos del lado del atacante, solo hace falta una computadora o incluso múltiples
+	 dispositivos (en un ataque DDoS) para generar el tráfico masivo que agota rápidamente la capacidad de la víctima.</p>
+
+	<h4>¿Cómo prevenir las inundaciones ICMP?</h4>
+
+	<p>1 Limitar el tráfico ICMP: Configurar firewalls para limitar o filtrar el tráfico ICMP, permitiendo solo las solicitudes esenciales.
+	<br/>
+	2 Rate Limiting (Limitación de tasa): Implementar mecanismos para limitar la velocidad a la que se permiten mensajes ICMP, de modo que 
+	el sistema no se sobrecargue con solicitudes.
+	<br/>
+	3 Deshabilitar respuestas ICMP innecesarias: En algunos casos, se puede configurar el sistema para que no responda a solicitudes de ping
+	 o para que filtre aquellas que provengan de fuentes sospechosas.
+	<br/>
+	4 Sistemas de detección de intrusos (IDS): Utilizar herramientas como Suricata o Snort para monitorear el tráfico de red y detectar 
+	patrones anormales que podrían indicar una inundación ICMP.</p>
+
+	<h3>3 Ataques de amplificación de DNS</h3>
+	<p>Un ataque de amplificación de DNS es una técnica peligrosa que utiliza servidores DNS para generar grandes volúmenes de tráfico hacia 
+	una víctima, saturándola con datos que nunca solicitó. Al entender cómo funciona y tomar medidas de prevención, se pueden proteger las 
+	redes contra esta forma de ataque DDoS, que puede resultar altamente dañina si no se mitiga a tiempo.</p>
+	<p>Los ataques de amplificación de DNS aprovechan la naturaleza del sistema de nombres de dominio (DNS) para sobrecargar a su víctima 
+	con una gran cantidad de tráfico no solicitado.</p>
+	<p>El atacante utiliza servidores DNS públicos para generar grandes cantidades de tráfico, que luego son redirigidas a la víctima.  
+	El atacante envía un pequeño mensaje al servidor DNS, suplantando la IP de la víctima, preguntando por información extensa 
+	(como los registros DNS completos de un dominio), el servidor DNS responde enviando una gran cantidad de datos, 
+	pero en lugar de enviarlos al atacante,los manda a la dirección IP de la víctima, inundándose con tráfico masivo.</p>
+	
+	<h4>¿Cómo prevenir los ataques de amplificación de DNS?</h4>
+		
+	<p>Configurar correctamente los servidores DNS: Los administradores de servidores DNS deben asegurarse de que sus servidores no respondan
+	 a solicitudes de DNS no autorizadas o externas, lo que se conoce como cerrar un servidor DNS abierto.
+	<br/>
+	Implementar Rate Limiting (limitación de tasa): Los servidores DNS deben limitar la cantidad de respuestas que envían a una sola 
+	dirección IP en un periodo corto de tiempo.
+	<br/>
+	Filtrar direcciones IP falsificadas: Los routers y firewalls deben filtrar paquetes que provengan de direcciones IP que no coincidan 
+	con la red de origen para prevenir la falsificación de IP.
+	<br/>
+	Usar servidores DNS seguros: Utilizar servicios de DNS que incluyan protección contra amplificación, como los ofrecidos por algunas 	
+	soluciones de seguridad en la nube.
+	<br/>
+	Implementar soluciones de mitigación DDoS: Estas soluciones pueden detectar y  mitigar grandes volúmenes de tráfico anómalo generado por 
+	ataques de amplificación antes de que lleguen a la infraestructura de la víctima.</p>
+
+	<h5>Referencias</h5>
+	<ul>
+	<li>https://www.ibm.com/es-es/topics/ddos</li>
+	<li>https://concepto.de/modelo-osi/</li>
+	<li>https://www.kaspersky.es/resource-center/definitions/what-is-a-smurf-attack</li>
+	<li>https://www.cloudflare.com/es-es/learning/ddos/udp-flood-ddos-attack/</li>
+	<li>https://www.akamai.com/es/glossary/what-is-icmp-flood-ddos-attack</li>
+	<li>https://www.cloudflare.com/es-es/learning/ddos/dns-flood-ddos-attack/</li>
+	<li>https://www.cloudflare.com/es-es/learning/ddos/dns-amplification-ddos-attack/</li>
+ 	<li>Asistido con GPT</li>
+
+	</ul>
 	</div><button class="btn-leer-mas"">Leer más</button>
 
         </article>
@@ -253,11 +348,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		 <div class="img-blog"><img src="docs/img/tecnologia.jpg"alt="imagen-tecnología"></div>
 
 	<h3>¿Qué es la Tecnología?</h3>
-	<p>La tecnología es un concepto amplio que abarca el conjunto de conocimientos, herramientas y métodos utilizados por la humanidad para resolver problemas y mejorar su calidad de vida. En términos generales, la tecnología ha transformado prácticamente todos los aspectos de la vida humana, desde la medicina hasta el transporte, la comunicación y, por supuesto, la informática. En este artículo, vamos a explorar 
+	<p>La tecnología es un concepto amplio que abarca el conjunto de conocimientos, herramientas y métodos utilizados por la humanidad
+	para resolver problemas y mejorar su calidad de vida.</p>
+	        <div id="desplegar" style="display:none;">
+
+	<p> En términos generales, la tecnología ha transformado prácticamente todos los aspectos de la vida humana, desde la medicina 
+	hasta el transporte, la comunicación y, por supuesto, la informática. En este artículo, vamos a explorar 
 	qué es la tecnología con un enfoque particular en su relación con el campo de la informática.</p>
 
-        <div id="desplegar" style="display:none;">
-	
 	<h3>Tecnología en la Informática</h3>
 	<p>La informática es el área de la tecnología que se centra en el estudio y desarrollo de sistemas de procesamiento de información. 
 	Esto incluye hardware (los componentes físicos de las computadoras), software (los programas y aplicaciones que utilizamos), 
@@ -329,9 +427,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article id="contenido">
 
-                 <div class="img-blog"><img src="docs/img/linux.png"alt="imagen-linux"></div>
+                 <div class="img-blog"><img src="docs/img/linux.png"alt="imagen-linux"id="octubre-2024tecno">></div>
 	
-	<h3>Sistema operativo Linux</h3>
+	<h3 id="octubre-2024desa">Sistema operativo Linux</h3>
 	<p>Linux, el venerable sistema operativo de código abierto, ha sido una fuerza impulsora en el mundo de la tecnología desde su creación
 	 en la década de 1990.</p>
 
@@ -416,36 +514,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     </section>
+
   <div id="entradas">
 <h3>Entradas</h3>
 <ul>
 <li><a href="#ciber">Ciberseguridad</a><li>
+	<ul>
+	Octubre-2024
+	<li><a href="#octubre-2024ciber"rel="noopener noreferrer">ataque DDoS</a></li>
+	</ul>
 <li><a href="#desa">Desarrollo web</a><li>
+	<ul>
+
+        <li></li>
+        </ul>
+
 <li><a href="#tecno">Tecnología</a><li>
+	<ul>
+	Octubre-2024
+        <li><a href="#octubre-2024tecno"rel="noopener noreferrer">Linux</a></li>
+        </ul>
 
 </ul>
 <div id="hide">
-<img src="docs/img/logob1.png" alt ="logo">
-</div>
+<img src="docs/img/logob1.png" alt ="logo"></div>
+<br/>
 </div>
 
-<div id="anuncios">
-<h3>Anuncios</h3>
-<ul>  
-<li><a href="#">anuncie aqui</a><li>
-<li><a href="#"></a><li>
-<li><a href="#"></a><li>
+<!--  
 
-</ul> 
+<div id="anuncios3">
+<h3>Anuncie aqui</h3>
+
 <div id="hide">
-<img src="docs/img/logob1.png" alt ="logo">
-</div>
-</div>
+<img src="docs/img/anuncio3.png" alt ="anuncio3 160x600"></div>
+
+<div id="hide1">
+<img src="docs/img/anuncio1.png" alt ="anuncio 320x50"></div>
 
 </div>
+
+<article id="anuncios1-2">
+
+<div id="anuncios1">
+<h3>Anuncie aqui</h3>
+<div id="hide">
+<img src="docs/img/anuncio1.png" alt ="anuncio 336x280"></div>
+
+<div id="hide1">
+<img src="docs/img/anuncio1.png" alt ="anuncio 320x50"></div>
 </div>
+<div id="anuncios2">
+<h3>Anuncie aqui</h3> 
+<div id="hide">
+<img src="docs/img/anuncio2.png" alt ="anuncio1 336x280"></div>
 
+<div id="hide1">
+<img src="docs/img/anuncio1.png" alt ="anuncio 320x50"></div>
 
+</div>
+</article>
+-->
 
 
 				<!--- EDICION POR PUBLICAR ciberseguridad 
