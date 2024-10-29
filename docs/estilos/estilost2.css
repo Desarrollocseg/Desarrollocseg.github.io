@@ -677,33 +677,37 @@ section {
 
   }
 
-#anuncios1-2{
-background-color:white;
-        padding:1%;
-       /* display: grid;
-        grid-gap: 10px;*/
-        width: 80%; 
-       /* border-color: #1E6BA2;
-        border-style: double;*/
-
+/*estilos para los anuncios y entradas*/
+.anuncio {
+  width: 100%;
+  border: 2px double #687578;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
+
+.anuncio img {
+  width: 100%;
+  height: auto;
+}
+
+#anuncios1-2{
+display: flex;
+  gap: 10px;
+  width: 70%;
+ padding:10%
+}
+
+/*anuncios1*/
 
 #anuncios1{
 
   flex: 1;
- /* box-shadow: 0 0 10px #1E6BA2;*/
-  padding: 20px;
   border-color: #687578;
   border-style: double;
-  margin-left: 10%;
-  margin-top: 1.3%;
-  /*background-color: #687578;*/
-  height: fit-content;
-  font-size:small;
-  width: 336px;
- height: 280px;
- margin-right: 0%;
-  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 #anuncios1 img{
 width: 100%;
@@ -726,22 +730,16 @@ color:#F4AF00;
 }
  
 /*anuncios2*/
+
 #anuncios2{
 
   flex: 1;
- /* box-shadow: 0 0 10px #1E6BA2;*/
-  padding: 20px;
   border-color: #687578;
   border-style: double;
-  margin-left: 1%;
-  margin-top: 1.3%;
-  /*background-color:#687578;*/
-  height: fit-content;
-  font-size:small;
-  width: 336px;
-  height: 280px;
-  margin-right: 10%;
-  float: right;
+  
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 #anuncios2 img{
 width: 100%;
@@ -763,84 +761,67 @@ font-weight:bold;
 color:#F4AF00;
 }
 
-/*anuncio3*/
-
-#anuncios3{
-
- /* flex: 1;
-  box-shadow: 0 0 10px #1E6BA2;
-  padding: 20px;*/
-  border-color: #687578;
-  border-style: double;
-  margin-left: 76%;
-  margin-top: 18.3%;
- /* background-color: #687578;*/
-  /*height: fit-content;*/
-  font-size: small;
-  width:160px;
-  height: 600px;
-  /*margin-right: 136%;*/
- /* float: right;*/
-  position: absolute;
-}
-}
-#anuncios3 img{
-width: 100%;
-}
-#anuncios3 h3{
-font-size:small;
-margin-bottom:10px;
-}
-#anuncios3 ul{
-list-style-type:none;
-padding:0;
-}
-#anuncios3 ul li a{
-text-decoration:none;
-color:#F4AF00;
-font-weight:bold;
-}
-#anuncios3 ul li a{
-color:#F4AF00;
-}
-
-
-
-#entradas{
-
-  flex: 1;
- /* box-shadow: 0 0 10px #1E6BA2;*/
-  padding: 20px;
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1%;
   border-color: #1E6BA2;
   border-style: double;
-  margin-left: 1%;
-  margin-top: 1.3%;
-  background-color: white;
-  height: fit-content;
-  font-size:small;
-  /*position: sticky;
-  top: 11%;*/
+ 
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
-#entradas img{
-width: 100%;
+/*anuncio3*/
+
+#anuncios3 {
+  padding: 10px;
+ /* border: 2px double #687578;*/
+  width: 88%;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0%;
 }
-#entradas h3{
-font-size:20px;
-margin-bottom:10px;
+
+#anuncios3 img {
+  width: 100%;
+  height: auto;
 }
-#entradas ul{
-list-style-type:none;
-padding:0;
+/*entradas*/
+
+#entradas {
+  background-color: white;
+  font-size: small;
+  margin:10%;
 }
-#entradas ul li a{
-text-decoration:none;
-font-weight:bold;
+
+#entradas img {
+max-width:130px;
 }
-#entradas ul li a{
-color:#1E6BA2;
+#entradas h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
+#entradas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#entradas ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1E6BA2;
+  font-size: small;
+}
+
 /*footer*/
+
 footer {
     	display:flex ;
     	flex-wrap: wrap;
@@ -893,7 +874,7 @@ footer ul li {
 
 
 
-/* Estilos para pantallas pequeñas */
+						/* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 510px) {
    
     /* Estilos para nav */
@@ -932,6 +913,7 @@ footer ul li {
     
     
 #blog{
+
 width: 100%;
 }
   
@@ -1016,7 +998,7 @@ footer {
 }
  
 }
-  /* pantallas medianas (tablets) y superiores */
+ 						 /* pantallas medianas (tablets) y superiores */
 
   @media only screen and (min-width: 601px) {
 
@@ -1034,54 +1016,57 @@ footer {
 
     /*vista de desarrollocseg*/
      
-  /* Estilos para pantallas móviles */
+ 						 /* Estilos para pantallas móviles */
 @media only screen and (max-width: 510px) {
-    	#hide1 {
+    
+	#hide1 {
         display: block; /* Muestra el contenedor en pantallas pequeñas */
     }
 
-
-#anuncios1-2{
-background-color:white;
-        padding:1%;
-        display: grid;
-        grid-gap: 10px;
-        width: 100%; 
-        border-color: #1E6BA2;
-        border-style: double;
+#main-container {
+    flex-direction: column;
+ 	width: 100%;
+ 
 }
 
+#anuncios1-2{
+grid-template-columns: 1fr 1fr;
+
+}
+
+#sidebar,#anuncios1-2 {
+    width: 100%;
+  }
+
 #anuncios1{
-width: 320px;
-height: 50px;
-margin-left: 5%;
+
+
+width: 100%;
+margin: 0 auto;
 }
 
 #anuncios2{
-width: 320px;
-height: 50px;
-margin-left: 0%;
-margin-right:-22%;
+width: 90%;
+  margin: 0 auto;
 }
 
 #anuncios3{  
-    width: 320px;
-    height: 50px;
-    margin-left: 5%;
+    width: 87%;
+    height: auto;
+   /* margin-left: 5%;*/
     margin-right: 1%;
     position: inherit;
-    margin-top: 10%;
+   /* margin-top: 10%;*/
     padding: 20px;
-
 }
 
 }
 
 
-/* Estilos para pantallas medianas (tablets) y grandes (escritorios) */
+					/* Estilos para pantallas medianas (tablets) y grandes (escritorios) */
 @media only screen and (min-width: 511px) {
     	#hide1 {
-        display: none; /* Oculta el contenedor en pantallas medianas y grandes */
+        display: none;
     }
 
 
