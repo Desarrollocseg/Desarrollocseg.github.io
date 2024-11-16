@@ -515,10 +515,10 @@ background-color:#45a049;
     	/*display: none;*/
     	margin-top: 10px;
     	margin-bottom: 10px;
-    	background-color: rgb(207, 205, 205);
+    	background-color: whithe;
     	transition: opacity 0.3s ease; /* Agrega una transición suave para la propiedad de opacidad */
-    	box-shadow: 5px 5px 10px 1px  darkolivegreen;
-    
+    	box-shadow: 5px 5px 10px 1px  #68757B;
+	padding: E%;    
 }
 #servicios ul li{
     	text-align: center;
@@ -544,6 +544,7 @@ background-color:#45a049;
     }
 #servicios article{
     	border-style: none;
+	padding:5%;
 }
 
 #servicios.visible {
@@ -557,6 +558,30 @@ section {
     	grid-gap: 10px;
 }
 
+table {
+	display:grid;
+  /* border: 1px solid #ddd;*/
+    width: 100%;
+    /*text-align: center;*/
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    list-style-type:none;
+    text-aling:justify;	
+
+}
+td img{
+	 max-width: inherit;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-aling:center;
+}
 
 
 
@@ -681,7 +706,7 @@ section {
 /*estilos para los anuncios y entradas*/
 .anuncio {
   width: 100%;
-  border: 2px double #687578;
+ /* border: 2px double #687578;*/
   padding: 10px;
   background-color: #f9f9f9;
   text-align: center;
@@ -706,12 +731,12 @@ display: flex;
   flex: 1;
   border-color: #687578;
   border-style: double;
-  width: 100%;
+/*  width: 100%;*/
   height: auto;
   margin: 0 auto;
 }
 #anuncios1 img{
-width: 100%;
+max-width: 100%;
 }
 #anuncios1 h3{
 font-size:small;
@@ -743,7 +768,7 @@ color:#F4AF00;
   margin: 0 auto;
 }
 #anuncios2 img{
-width: 100%;
+max-width: 100%;
 }
 #anuncios2 h3{
 font-size:small;
@@ -820,6 +845,51 @@ max-width:130px;
   color: #1E6BA2;
   font-size: small;
 }
+/*boton whatsapp*/
+
+#whatsappBtn {
+    position: fixed;
+    bottom: 63px;
+    right: 6px; /* Se ajusta para no sobreponerse al botón de "Arriba" */
+    display: none;
+    padding: 4px 9px;
+    font-size: 16px;
+    background-color: #25D366; /* Color característico de WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+#whatsappBtn:hover {
+    opacity: 0.8;
+}
+#whatsappBtn img{
+	width: 30px;
+        height:30px;
+
+}
+
+
+/*boton arriba*/
+#backToTopBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 4px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #1E6BA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+#backToTopBtn:hover {
+    opacity: 0.8;
+}
+
 
 /*footer*/
 
@@ -1032,13 +1102,11 @@ footer {
 }
 
 #anuncios1-2{
-grid-template-columns: 1fr 1fr;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	width:100%
 }
 
-#sidebar,#anuncios1-2 {
-    width: 100%;
-  }
 
 #anuncios1{
 
@@ -1048,7 +1116,7 @@ margin: 0 auto;
 }
 
 #anuncios2{
-width: 90%;
+width: 100%;
   margin: 0 auto;
 }
 
@@ -1062,6 +1130,14 @@ width: 90%;
     padding: 20px;
 }
 
+.anuncio img{
+  max-width: 300px;
+  height: 50px;
+}
+#anuncios3 img{
+  max-width: 300px;
+  height: 50px;
+}
 }
 
 
