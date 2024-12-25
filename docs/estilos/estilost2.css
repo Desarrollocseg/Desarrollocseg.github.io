@@ -307,6 +307,24 @@ nav a:hover {
 	max-width: 400px;
   	filter: grayscale(85%);
 }
+#presentacion {
+	display:flex;		
+	background-color: white;
+
+}
+#imagen-presentacion{
+	margin: 9% 3% 0% 9%;        
+}
+#imagen-presentacion img{
+	border-color: #1E6BA2;
+        border-style: outset;
+        border-radius: 45%;
+	
+}
+#text-presentacion{
+	margin: 9%;
+	margin-bottom: 3%;
+}
 .btn-leer-mas{
 	background-color: #4CAF50;
 	color:white;
@@ -1138,6 +1156,10 @@ width: 100%;
   max-width: 300px;
   height: 50px;
 }
+
+#presentacion{  display: grid;}
+
+
 }
 
 
@@ -1148,5 +1170,8 @@ width: 100%;
     }
 
 
+
 }
+
+
 
