@@ -1,0 +1,140 @@
+/*esta hoja son efectos que se le aplican a los textos e imagenes*/
+
+.animated-text {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    animation: colorChange 3s infinite; /* Animación de 3 segundos en bucle */
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+/**/
+
+
+.typing-effect {
+    font-size: 2em;
+    font-weight: bold;
+   /* text-align: center;*/
+    overflow: hidden; /* Oculta el texto que sobrepasa el contenedor */
+    white-space: nowrap; /* Evita que el texto haga salto de línea */
+   /* border-right: 3px solid orange; /* Cursor simulando escritura */
+    width: 16ch; /* Controla el ancho visible del texto */
+    animation: typing 4s steps(30), blink 0.7s step-end;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/**/
+
+
+.blinking-text {
+    font-size: 2em;
+    color: red;
+    animation: blinkEffect 1s infinite;
+}
+
+@keyframes blinkEffect {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/**/
+
+
+.moving-text {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/**/
+
+.bouncing-text {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/**/
+
+        @keyframes fadeIn {
+            
+	from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+           
+	 to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Aplicar animación a la imagen */
+
+        .fade-in {
+/*            width: 100%;
+            display: block;
+            margin: 50px auto;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+  */
+	    opacity: 0;
+            filter: blur(10px);
+            transition: opacity 1.5s ease-out, filter 1.5s ease-out;      }
+
+
+.visible {
+            opacity: 1;
+            filter: blur(0);
+            animation: fadeIn 1.5s ease-out forwards;

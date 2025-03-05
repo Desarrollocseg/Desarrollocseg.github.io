@@ -412,9 +412,9 @@ background-color:#45a049;
 #texto{
 	flex: 1; /* El texto ocupa el 50% del espacio */
         padding-right: 20px; /* Espacio entre el texto y la imagen */
-
-
 }
+
+
 #imagen{
         flex: 1; /* La imagen ocupa el otro 50% */
 	 box-shadow: 2px 2px 3px 1px #1E6BA2;
@@ -623,7 +623,7 @@ th {
   }
   
   
-  .tarjeta {
+#tarjeta {
     	background-color:white;
     	border: none;
     	font-size: medium;
@@ -637,7 +637,7 @@ th {
 
   }
   
-.tarjeta2 {
+#tarjeta2 {
         background-color:white;
         border: none;
         font-size: medium;
@@ -645,7 +645,8 @@ th {
         /*width: 100%;*/
         margin: 1%;
         box-shadow: 2px 2px 3px 1px gray;
-        border-top-left-radius: 10%;
+ 
+       border-top-left-radius: 10%;
         border-top-right-radius: 10%;
          /*padding:2%;*/
 }
@@ -1002,9 +1003,9 @@ footer ul li {
     
 #blog{
 
-width: 100%;
-margin-right:0%;
-}
+	width: 100%;
+	margin-right:0%;
+	}
   
 .img-blog img {
         max-width: 200px;
@@ -1025,7 +1026,9 @@ margin-right:0%;
         grid-template-columns:auto;
         gap: 1%;
 }
-
+#contenido1 h2 {
+  font-size: 2em;
+}
 #contenido h2 {
 	font-size: x-large;
 }
