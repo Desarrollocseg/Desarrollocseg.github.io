@@ -2,7 +2,7 @@
 
 # Proyecto de Desarrollo Web y Ciberseguridad
 
-Este es un proyecto creado por César Cruz (@Desarrollocseg). Puedes visitar mi sitio web en [desarrollocseg.github.io](https://desarrollocseg.github.io/).
+Este es un proyecto creado por César Cruz (@Desarrollocseg). Puedes visitar mi sitio web en [desarrollocseg.com](https://desarrollocseg.com).
 
 ## Descripción
 
@@ -27,6 +27,6 @@ Es una página web dedicada al desarrollo web y la ciberseguridad.
 - **YouTube**:  [youtube.com/@Desarrollocseg](https://www.youtube.com/@Desarrollocseg)
 - **Instagram**: Contenido restringido para mayores de 16 años [instagram.com/desarrollocseg](https://www.instagram.com/desarrollocseg/)
 
-Si deseas contactar al desarrollador, puedes hacerlo a través de: [Contacto](https://desarrollocseg.github.io/contactenos.html).
+Si deseas contactar al desarrollador, puedes hacerlo a través de: [Contacto](https://desarrollocseg.com/contactenos.html).
 
 
